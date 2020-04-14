@@ -16,6 +16,16 @@ a {
     text-decoration: none;
     color: inherit; }
 
+h2 {
+  font-size: 36px;
+  font-weight: 700;
+  color: #282828; }
+
+p {
+  font-family: 'Raleway', sans-serif;
+  font-size: 15px;
+  color: #575757; }
+
 header {
   color: white;
   background-image: url("../images/header_bg.jpg");
@@ -47,15 +57,12 @@ header {
     display: inline-block;
     max-width: 118px;
     max-height: 24px; }
-    header .logo img {
-      width: 100%;
-      height: 100%; }
   header .navbar {
     display: inline-block; }
   header .navbar-light .navbar-nav .nav-link, header .navbar-light .navbar-nav .active > .nav-link {
     color: white; }
 
-#about_us span {
+#about_us span.about {
   text-transform: uppercase;
   font-size: 36px;
   font-weight: 300; }
@@ -76,7 +83,8 @@ header {
   font-size: 18px;
   margin-top: 20px;
   margin-bottom: 55px; }
-#about_us a {
+
+a.button {
   min-width: 170px;
   height: 60px;
   display: inline-block;
@@ -86,7 +94,7 @@ header {
   padding: 14px 0 10px;
   margin-right: 15px;
   position: relative; }
-  #about_us a:before {
+  a.button:before {
     display: inline-block;
     font-style: normal;
     font-variant: normal;
@@ -99,29 +107,189 @@ header {
     font-size: 30px;
     top: 8px;
     left: 15px; }
-  #about_us a:last-of-type {
+  a.button:last-of-type {
     margin-right: 0;
     margin-left: 15px;
     background-color: transparent;
     border: 1px solid white; }
-    #about_us a:last-of-type:before {
+    a.button:last-of-type:before {
       content: "\f179";
       font-size: 34px;
       top: 2px; }
-  #about_us a span {
+  a.button span {
     font-size: 16px;
     margin-left: 55px;
     display: block;
     font-weight: 700; }
-    #about_us a span:first-of-type {
+    a.button span:first-of-type {
       font-size: 9px;
       margin-bottom: -4px;
       font-weight: 300; }
-      #about_us a span:first-of-type:before {
+      a.button span:first-of-type:before {
         display: inline-block;
         font-style: normal;
         font-variant: normal;
         text-rendering: auto;
         -webkit-font-smoothing: antialiased; }
+
+#pluses {
+  margin: 170px 0 275px; }
+  #pluses i {
+    display: block;
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+    background-color: #24c657;
+    margin: auto;
+    font-size: 40px;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+    #pluses i:before {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); }
+  #pluses .fa-scroll {
+    background-color: #00cff1; }
+  #pluses .fa-cogs {
+    background-color: #ff45c4; }
+  #pluses .fa-layer-group {
+    background-color: #ff9d46; }
+  #pluses .border {
+    margin: 0 auto 56px;
+    position: relative;
+    width: 114px;
+    height: 114px;
+    border: 1px solid #f1f1f1;
+    border-radius: 50%; }
+  #pluses span {
+    font-weight: 700;
+    font-size: 18px;
+    color: #414040;
+    display: inline-block;
+    margin-bottom: 22px; }
+
+#features {
+  margin-bottom: 140px; }
+  #features h2 {
+    margin-bottom: 22px; }
+    #features h2 span {
+      color: #00cff1; }
+  #features p {
+    margin-bottom: 30px; }
+  #features .for_img {
+    max-width: 470px;
+    max-height: 609px; }
+  #features .feature {
+    margin-bottom: 40px; }
+    #features .feature span {
+      font-size: 18px;
+      font-weight: 700;
+      color: #414040;
+      display: inline-block;
+      margin-bottom: 10px; }
+      #features .feature span:before {
+        display: block;
+        font-style: normal;
+        font-variant: normal;
+        text-rendering: auto;
+        -webkit-font-smoothing: antialiased;
+        font-family: "Font Awesome 5 Pro";
+        font-weight: 900;
+        content: "\f3a5";
+        font-size: 36px;
+        color: #01cff1;
+        margin-bottom: 20px; }
+    #features .feature p {
+      color: #414040;
+      margin-bottom: 0; }
+  #features .second span:before {
+    content: "\f577"; }
+  #features .third span:before {
+    content: "\f0f3"; }
+  #features .fourth span:before {
+    content: "\f1da"; }
+
+#overview {
+  margin-bottom: 140px; }
+  #overview a.button:last-of-type span {
+    margin-left: 65px; }
+  #overview a.button:before {
+    content: "\f179"; }
+  #overview a.button:last-of-type {
+    color: black;
+    border-color: black; }
+    #overview a.button:last-of-type:before {
+      content: "\f3ab";
+      font-size: 30px;
+      top: 8px; }
+  #overview h2 {
+    margin-bottom: 22px; }
+    #overview h2 span {
+      color: #00cff1; }
+  #overview p {
+    margin-bottom: 56px; }
+  #overview .app_overview {
+    padding: 132px 0 128px; }
+  #overview .for_video {
+    height: 100%;
+    position: relative; }
+    #overview .for_video:after {
+      display: block;
+      position: absolute;
+      content: " ";
+      width: 100.1%;
+      height: 100%;
+      background-color: rgba(69, 201, 113, 0.8);
+      top: 0; }
+    #overview .for_video:before {
+      display: inline-block;
+      font-style: normal;
+      font-variant: normal;
+      text-rendering: auto;
+      -webkit-font-smoothing: antialiased;
+      font-family: "Font Awesome 5 Free";
+      font-weight: 900;
+      content: "\f144";
+      color: white;
+      font-size: 80px;
+      position: absolute;
+      z-index: 2;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); }
+
+#screenshots {
+  margin-bottom: 150px; }
+  #screenshots .for_img {
+    max-width: 350px;
+    max-height: 658px; }
+  #screenshots .owl-dots .owl-dot span {
+    display: inline-block;
+    width: 40px;
+    height: 7px;
+    border-radius: 4px;
+    background-color: #ebe9ff;
+    margin: 0 5px;
+    transition: .3s; }
+  #screenshots .owl-dots {
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    bottom: -60px; }
+  #screenshots .owl-dot.active span {
+    background-color: #00cff1;
+    width: 60px;
+    height: 7px; }
+  #screenshots h2 {
+    margin-bottom: 30px; }
+    #screenshots h2 span {
+      color: #00cff1; }
+  #screenshots p {
+    margin-bottom: 80px;
+    max-width: 465px; }
 
 /*# sourceMappingURL=styles.css.map */
