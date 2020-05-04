@@ -5,21 +5,21 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>lampaled</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/media-queries.css">
-
+    <link rel="shortcut icon" type="image/png" href="images/Fav_icon.ico">
 </head>
 <body>
 <header>
     <div class="container">
         <div class="row">
             <div class="menu justify-content-between">
-                <div class="logo">
-                    <a href="#"><img src="images/appnest.png" alt="logo" width="100%" height="100%"></a>
+                <div class="logo order-0">
+                    <a href="#"><img src="images/appnest.png" alt="logo"></a>
                 </div>
                 <nav class="navbar navbar-expand-lg navbar-light">
-                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    <button class="navbar-toggler order-1" type="button" data-toggle="collapse"
                             data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                             aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
@@ -31,24 +31,24 @@
                                 <a class="nav-link" href="#">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Feature</a>
+                                <a class="nav-link" href="#features">Feature</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Pricing</a>
+                                <a class="nav-link" href="#price_table">Pricing</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Team</a>
+                                <a class="nav-link" href="#bg_line">Team</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Blog</a>
+                                <a class="nav-link" href="#r_news">Blog</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Contact</a>
+                                <a class="nav-link" href="#footer">Contact</a>
                             </li>
                         </ul>
                     </div>
                 </nav>
-                <a href="#" class="Get">Get The App</a>
+                <a href="#" class="Get order-2">Get The App</a>
             </div>
             <section id="about_us">
                 <div class="row justify-content-between">
@@ -64,7 +64,9 @@
                         <a href="#" class="button"><span>download from</span><span>Play store</span></a>
                     </div>
                     <div class="col-md-6">
-                        <img src="images/iPhone_X.png" alt="Iphone_X">
+                        <div class="for_img">
+                            <img src="images/iPhone_X.png" alt="Iphone_X">
+                        </div>
                     </div>
                 </div>
             </section>
@@ -120,12 +122,12 @@
 <section id="features">
     <div class="container">
         <div class="row">
-            <div class="col-md-4">
+            <div class="col-md-6 col-lg-4">
                 <div class="for_img">
-                    <img src="images/Image.png" width="100%" height="100%">
+                    <img src="images/Image.png" alt="features">
                 </div>
             </div>
-            <div class="col-md-6 offset-md-2">
+            <div class="col-md-6 offset-lg-2">
                 <div class="fetures">
                     <h2>App Core <span>Features</span></h2>
                     <p>
@@ -133,34 +135,30 @@
                         adipisicing elit.
                     </p>
                     <div class="row">
-                        <div class="col-md-6">
-                            <div class="feature first">
+                            <div class="feature first col-md-6">
                                 <span>Premium Quality</span>
                                 <p>
                                     Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                                 </p>
                             </div>
-                            <div class="feature second">
-                                <span>Top Class Security</span>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="feature third">
+                            <div class="feature third col-md-6">
                                 <span>Retina Ready</span>
                                 <p>
                                     Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                                 </p>
                             </div>
-                            <div class="feature fourth">
+                            <div class="feature second col-md-6">
+                                <span>Top Class Security</span>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                </p>
+                            </div>
+                            <div class="feature fourth col-md-6">
                                 <span>Excellent Support</span>
                                 <p>
                                     Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                                 </p>
                             </div>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -172,7 +170,7 @@
         <div class="row">
             <div class="col-md-6">
                 <div class="row">
-                    <div class="col-md-6 offset-md-5 app_overview">
+                    <div class="offset-1 col-11 col-xl-6 offset-xl-5 app_overview">
                         <h2>App Overview For Easy <span>Understanding</span></h2>
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, asperiores dicta
@@ -203,19 +201,15 @@
                     ducimus esse et eum facilis id.</p>
             </div>
             <div class="owl-carousel justify-content-between">
-                <div class="for_img"><img src="images/screen_1.jpg" alt="screenshot" width="100%" height="100%"></div>
-                <div class="for_img"><img src="images/screen_2.jpg" alt="screenshot" width="100%" height="100%"></div>
-                <div class="for_img"><img src="images/screen_3.jpg" alt="screenshot" width="100%" height="100%"></div>
-                <div class="for_img"><img src="images/screen_1.jpg" alt="screenshot" width="100%" height="100%"></div>
-                <div class="for_img"><img src="images/screen_2.jpg" alt="screenshot" width="100%" height="100%"></div>
-                <div class="for_img"><img src="images/screen_3.jpg" alt="screenshot" width="100%" height="100%"></div>
-                <div class="for_img"><img src="images/screen_1.jpg" alt="screenshot" width="100%" height="100%"></div>
-                <div class="for_img"><img src="images/screen_2.jpg" alt="screenshot" width="100%" height="100%"></div>
-                <div class="for_img"><img src="images/screen_3.jpg" alt="screenshot" width="100%" height="100%"></div>
-                <div class="for_img"><img src="images/screen_1.jpg" alt="screenshot" width="100%" height="100%"></div>
-                <div class="for_img"><img src="images/screen_2.jpg" alt="screenshot" width="100%" height="100%"></div>
-                <div class="for_img"><img src="images/screen_3.jpg" alt="screenshot" width="100%" height="100%"></div>
-
+                <div class="for_img m-auto"><img src="images/screen_1.jpg" alt="screenshot"></div>
+                <div class="for_img m-auto"><img src="images/screen_2.jpg" alt="screenshot"></div>
+                <div class="for_img m-auto"><img src="images/screen_3.jpg" alt="screenshot"></div>
+                <div class="for_img m-auto"><img src="images/screen_1.jpg" alt="screenshot"></div>
+                <div class="for_img m-auto"><img src="images/screen_2.jpg" alt="screenshot"></div>
+                <div class="for_img m-auto"><img src="images/screen_3.jpg" alt="screenshot"></div>
+                <div class="for_img m-auto"><img src="images/screen_1.jpg" alt="screenshot"></div>
+                <div class="for_img m-auto"><img src="images/screen_2.jpg" alt="screenshot"></div>
+                <div class="for_img m-auto"><img src="images/screen_3.jpg" alt="screenshot"></div>
             </div>
         </div>
     </div>
@@ -263,7 +257,7 @@
             <div class="owl-carousel justify-content-between">
                 <div class="item">
                     <div class="for_feedback_img">
-                        <img src="images/face_1.jpg" alt="userpic" width="100%" height="100%">
+                        <img src="images/face_1.jpg" alt="userpic">
                     </div>
                     <span>Robert Colin</span>
                     <span>Repto Inc</span>
@@ -279,7 +273,7 @@
                 </div>
                 <div class="item_g">
                     <div class="for_feedback_img">
-                        <img src="images/face_2.jpg" alt="userpic" width="100%" height="100%">
+                        <img src="images/face_2.jpg" alt="userpic">
                     </div>
                     <span>Robert Colin</span>
                     <span>Repto Inc</span>
@@ -295,7 +289,7 @@
                 </div>
                 <div class="item">
                     <div class="for_feedback_img">
-                        <img src="images/face_3.jpg" alt="userpic" width="100%" height="100%">
+                        <img src="images/face_3.jpg" alt="userpic">
                     </div>
                     <span>Robert Colin</span>
                     <span>Repto Inc</span>
@@ -311,7 +305,7 @@
                 </div>
                 <div class="item">
                     <div class="for_feedback_img">
-                        <img src="images/face_1.jpg" alt="userpic" width="100%" height="100%">
+                        <img src="images/face_1.jpg" alt="userpic">
                     </div>
                     <span>Robert Colin</span>
                     <span>Repto Inc</span>
@@ -327,7 +321,7 @@
                 </div>
                 <div class="item_g">
                     <div class="for_feedback_img">
-                        <img src="images/face_2.jpg" alt="userpic" width="100%" height="100%">
+                        <img src="images/face_2.jpg" alt="userpic">
                     </div>
                     <span>Robert Colin</span>
                     <span>Repto Inc</span>
@@ -343,7 +337,7 @@
                 </div>
                 <div class="item">
                     <div class="for_feedback_img">
-                        <img src="images/face_3.jpg" alt="userpic" width="100%" height="100%">
+                        <img src="images/face_3.jpg" alt="userpic">
                     </div>
                     <span>Robert Colin</span>
                     <span>Repto Inc</span>
@@ -359,7 +353,7 @@
                 </div>
                 <div class="item">
                     <div class="for_feedback_img">
-                        <img src="images/face_1.jpg" alt="userpic" width="100%" height="100%">
+                        <img src="images/face_1.jpg" alt="userpic">
                     </div>
                     <span>Robert Colin</span>
                     <span>Repto Inc</span>
@@ -375,7 +369,7 @@
                 </div>
                 <div class="item_g">
                     <div class="for_feedback_img">
-                        <img src="images/face_2.jpg" alt="userpic" width="100%" height="100%">
+                        <img src="images/face_2.jpg" alt="userpic">
                     </div>
                     <span>Robert Colin</span>
                     <span>Repto Inc</span>
@@ -391,7 +385,7 @@
                 </div>
                 <div class="item">
                     <div class="for_feedback_img">
-                        <img src="images/face_3.jpg" alt="userpic" width="100%" height="100%">
+                        <img src="images/face_3.jpg" alt="userpic">
                     </div>
                     <span>Robert Colin</span>
                     <span>Repto Inc</span>
@@ -407,7 +401,7 @@
                 </div>
                 <div class="item">
                     <div class="for_feedback_img">
-                        <img src="images/face_1.jpg" alt="userpic" width="100%" height="100%">
+                        <img src="images/face_1.jpg" alt="userpic">
                     </div>
                     <span>Robert Colin</span>
                     <span>Repto Inc</span>
@@ -423,7 +417,7 @@
                 </div>
                 <div class="item_g">
                     <div class="for_feedback_img">
-                        <img src="images/face_2.jpg" alt="userpic" width="100%" height="100%">
+                        <img src="images/face_2.jpg" alt="userpic">
                     </div>
                     <span>Robert Colin</span>
                     <span>Repto Inc</span>
@@ -439,7 +433,7 @@
                 </div>
                 <div class="item">
                     <div class="for_feedback_img">
-                        <img src="images/face_3.jpg" alt="userpic" width="100%" height="100%">
+                        <img src="images/face_3.jpg" alt="userpic">
                     </div>
                     <span>Robert Colin</span>
                     <span>Repto Inc</span>
@@ -468,15 +462,15 @@
                 </p>
             </div>
             <div class="switcher col-md-12 justify-content-center">
-                <span>Month</span>
-                <span>Year</span>
+                <span class="month active">Month</span>
+                <span class="year">Year</span>
             </div>
             <div class="choose_table col-md-12">
                 <div class="row justify-content-around">
                     <div class="item col-md-3">
                         <span>Starter</span>
-                        <span>$50</span>
-                        <span>Monthly</span>
+                        <span class="price">$50</span>
+                        <span class="time">Monthly</span>
 
                         <ul>
                             <li>10 GB file storage</li>
@@ -490,8 +484,8 @@
                     </div>
                     <div class="item col-md-3">
                         <span>Proffesional</span>
-                        <span>$150</span>
-                        <span>Monthly</span>
+                        <span class="price">$150</span>
+                        <span class="time">Monthly</span>
 
                         <ul>
                             <li>10 GB file storage</li>
@@ -505,8 +499,8 @@
                     </div>
                     <div class="item col-md-3">
                         <span>Premium</span>
-                        <span>$250</span>
-                        <span>Monthly</span>
+                        <span class="price">$250</span>
+                        <span class="time">Monthly</span>
 
                         <ul>
                             <li>10 GB file storage</li>
@@ -540,10 +534,10 @@
             <div class="screens col-md-6 offset-md-1">
                 <div class="row">
                     <div class="for_img">
-                        <img src="images/bottom_screen_1.jpg" alt="bottom_screen" width="100%" height="100%">
+                        <img src="images/bottom_screen_1.jpg" alt="bottom_screen">
                     </div>
                     <div class="for_img">
-                        <img src="images/bottom_screen_2.jpg" alt="bottom_screen" width="100%" height="100%">
+                        <img src="images/bottom_screen_2.jpg" alt="bottom_screen">
                     </div>
                 </div>
             </div>
@@ -565,7 +559,7 @@
                 <div class="row justify-content-between">
                     <div class="item col-md-4">
                         <div class="for_img">
-                            <img src="images/news_1.jpg" alt="news" width="100%" height="100%">
+                            <img src="images/news_1.jpg" alt="news">
                         </div>
                         <div class="content">
                             <h3>Exclusive Post For You</h3>
@@ -580,7 +574,7 @@
                     </div>
                     <div class="item col-md-4">
                         <div class="for_img">
-                            <img src="images/news_2.jpg" alt="news" width="100%" height="100%">
+                            <img src="images/news_2.jpg" alt="news">
                         </div>
                         <div class="content">
                             <h3>Exclusive Post For You</h3>
@@ -595,7 +589,7 @@
                     </div>
                     <div class="item col-md-4">
                         <div class="for_img">
-                            <img src="images/news_3.jpg" alt="news" width="100%" height="100%">
+                            <img src="images/news_3.jpg" alt="news">
                         </div>
                         <div class="content">
                             <h3>Exclusive Post For You</h3>
@@ -620,10 +614,10 @@
         </div>
     </div>
 </section>
-<footer>
+<footer id="footer">
     <div class="container">
         <div class="row">
-            <div class="item col-md-4">
+            <div class="item col-md-5 col-lg-4">
                     <div class="for_img">
                         <img src="images/footer_logo.png" alt="logo">
                     </div>
@@ -638,7 +632,8 @@
                     <i class="fab fa-instagram"></i>
                     <i class="fab fa-linkedin-in"></i>
             </div>
-            <div class="item col-md-4">
+            <div class="item col-md-7 col-lg-4">
+                <div class="row justify-content-around">
                     <ul>
                         <li>Resources</li>
                         <li><a href="#">Watch Demo Video</a></li>
@@ -657,8 +652,9 @@
                         <li><a href="#">FeedBack</a></li>
                         <li><a href="#">Support Center</a></li>
                     </ul>
+                </div>
             </div>
-            <div class="item col-md-4">
+            <div class="item col-md-12 col-lg-4">
                     <span>Newsletter</span>
 
                     <form method="post" action="#">
